@@ -81,7 +81,15 @@
                 <p class="mt-5 mb-1">
                     <i>Kepada Yth <br> Bapak/Ibu/Saudara/i</i>
                 </p>
-                <h5 class="font-weight-bold"><?php echo $_GET['to']; ?></h5>
+                <h5 class="font-weight-bold">
+                <?php
+                    if (isset($_GET['to'])) {
+                        echo $_GET['to'];
+                    } else {
+                        // Fallback behaviour goes here
+                    }
+                ?>
+                </h5>
                 <p class="font-italic"> di Tempat </p>
                 <br>
                 <button type=button class="btn btn-md btn-secondary open_invitation px-5" style="z-index:100">Open
@@ -164,39 +172,11 @@
         <div class="col-lg-7 mx-auto mb-5">
             <div class="row">
                 <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
-                    class="col-lg-5 text-center couples  order-1 ">
+                    class="col-lg-5 text-center couples order-1">
                     <div class="row">
                         <div class="col-12 px-5">
                             <div class="couple-ring">
-                                <img src=uploads/original/gallery/Momentkitee-1174.jpg alt="Romeo Photo"
-                                    class="img-fluid">
-                            </div>
-                            <h2 class="mt-3">
-                                <span style="font-size:1.6rem;color:#6792b7">Jehan</span>
-                                <span class="d-block mt-3 serif">Jehan Nathasa Pujy</span>
-                            </h2>
-                            <p>
-                                Anak Kedua dari Keluarga <br>
-                                <b>Bapak John Trismen &amp; <br> Ibu Yenny</b>
-                            </p>
-                            <!-- <p class="m-0" style="color:#6792b7">Jl. Apel 15C, Condongcatur, Sleman, Yogyakarta</p> -->
-
-
-                            <div class="mt-4 socmed">
-                                <a href="https://instagram.com/jehaanpujy" rel="nofollow" target="_blank"><img
-                                        src=images/instagram.png width=20px alt="instagram"></a>
-                                <!-- <a href="https://twitter.com/datengdong" rel="nofollow" target="_blank"><img
-                                        src=images/twitter.png width=20px alt="twitter"></a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-delay="100" data-aos-duration="1000"
-                    class="col-lg-5 text-center couples ">
-                    <div class="row">
-                        <div class="col-12 px-5">
-                            <div class="couple-ring">
-                                <img src=uploads/original/gallery/Momentkitee-1143.jpg alt="Titus Photo"
+                                <img src=uploads/original/gallery/titus.jpg alt="Titus Photo"
                                     class="img-fluid">
                             </div>
                             <h2 class="mt-3">
@@ -212,6 +192,34 @@
 
                             <div class="mt-4 socmed">
                                 <a href="https://instagram.com/titusyan" rel="nofollow" target="_blank"><img
+                                        src=images/instagram.png width=20px alt="instagram"></a>
+                                <!-- <a href="https://twitter.com/datengdong" rel="nofollow" target="_blank"><img
+                                        src=images/twitter.png width=20px alt="twitter"></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-delay="100" data-aos-duration="1000"
+                    class="col-lg-5 text-center couples">
+                    <div class="row">
+                        <div class="col-12 px-5">
+                            <div class="couple-ring">
+                                <img src=uploads/original/gallery/jehan.jpg alt="Jehan Photo"
+                                    class="img-fluid">
+                            </div>
+                            <h2 class="mt-3">
+                                <span style="font-size:1.6rem;color:#6792b7">Jehan</span>
+                                <span class="d-block mt-3 serif">Jehan Nathasa Pujy</span>
+                            </h2>
+                            <p>
+                                Anak Kedua dari Keluarga <br>
+                                <b>Bapak John Trismen &amp; <br> Ibu Yenny</b>
+                            </p>
+                            <!-- <p class="m-0" style="color:#6792b7">Jl. Apel 15C, Condongcatur, Sleman, Yogyakarta</p> -->
+
+
+                            <div class="mt-4 socmed">
+                                <a href="https://instagram.com/jehaanpujy" rel="nofollow" target="_blank"><img
                                         src=images/instagram.png width=20px alt="instagram"></a>
                                 <!-- <a href="https://twitter.com/datengdong" rel="nofollow" target="_blank"><img
                                         src=images/twitter.png width=20px alt="twitter"></a> -->
@@ -656,33 +664,6 @@
                     <div class="row">
                         <div class="col-8">
                             <b>BCA </b><br>
-                            <span onClick='copyText(this)'>6320201827<img src=images/copy.png
-                                    style="height:13px;margin-top:-5px;cursor:pointer"></span><br> a/n Titus Yan Bagus
-                            <br>
-
-                        </div>
-                        <div class="col-4">
-                            <img src=images/payment/bca.jpg alt="Bank " style="width:100%;margin-top:25px">
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div class="row">
-                        <div class="col-8">
-                            <b>MANDIRI </b><br>
-                            <span onClick='copyText(this)'>1250010309409<img src=images/copy.png
-                                    style="height:13px;margin-top:-5px;cursor:pointer"></span><br> a/n Titus Yan Bagus
-                            <br>
-
-                        </div>
-                        <div class="col-4">
-                            <img src=images/payment/mandiri.jpg alt="Bank " style="width:100%;margin-top:25px">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-8">
-                            <b>BCA </b><br>
                             <span onClick='copyText(this)'>6043413479<img src=images/copy.png
                                     style="height:13px;margin-top:-5px;cursor:pointer"></span><br> a/n Jehan Nathasa
                             Pujy <br>
@@ -709,8 +690,35 @@
 
                     <hr>
                     <div class="row">
+                        <div class="col-8">
+                            <b>BCA </b><br>
+                            <span onClick='copyText(this)'>6320201827<img src=images/copy.png
+                                    style="height:13px;margin-top:-5px;cursor:pointer"></span><br> a/n Titus Yan Bagus
+                            <br>
+
+                        </div>
+                        <div class="col-4">
+                            <img src=images/payment/bca.jpg alt="Bank " style="width:100%;margin-top:25px">
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-8">
+                            <b>MANDIRI </b><br>
+                            <span onClick='copyText(this)'>1250010309409<img src=images/copy.png
+                                    style="height:13px;margin-top:-5px;cursor:pointer"></span><br> a/n Titus Yan Bagus
+                            <br>
+
+                        </div>
+                        <div class="col-4">
+                            <img src=images/payment/mandiri.jpg alt="Bank " style="width:100%;margin-top:25px">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
                         <div class="col-sm-12 offset-sm-1 text-center">
-                            <img src=uploads/original/qris/qr.jpeg alt="Qris" class="w-80" width="100%">
+                            <img src=uploads/original/qris/qr.jpeg alt="Qris" class="w-90" width="100%">
                         </div>
                         <div class="col-sm-12 text-center">
                             Scan QRIS
@@ -721,7 +729,7 @@
                     <div class="row">
                         <div class="col-sm-8 offset-sm-1 text-center">
                             <a href="https://saweria.co/jehandantitus" title="Saweria" target="_blank">
-                                <img src=uploads/original/qris/saweria.png alt="Qris" class="w-60"></a>
+                                <img src=uploads/original/qris/saweria.png alt="Qris" class="w-60" width="80%"></a>
                         </div>
                         <div class="col-sm-12 text-center">
                             OVO/Gopay/Dana dll <br>
